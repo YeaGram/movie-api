@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="src/style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Movie API</title>
+  </head>
+  <body>
+    <div class="wrapHead py-5">
+      <div class="container">
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light shadow-lg btn-outline-dark btn"
+        >
+          <div class="container-fluid">
+            <div
+              class="d-flex container justify-content-between align-items-center"
+            >
+              <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand brand" href="./">
+                    <img
+                      src="favicon.png"
+                      alt=""
+                      width="40"
+                      class="d-inline-block align-text-top"
+                    />
+                    <p class="m-0">InnMovie</p>
+                  </a>
+                </div>
+              </nav>
+
+              <button
+                class="navbar-toggler h-50"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div
+              class="collapse navbar-collapse d-lg-flex container-fluid"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Top</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Newest</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >Search</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <form class="d-flex m-0 my-3 w-100 px-lg-5">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                id="search-input"
+              />
+              <button class="btn btn-dark" id="search-button" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <main class="px-5 my-5">
+      <h1 id="judulPencarian">Movie</h1>
+      <hr />
+
+      <div id="movie-list" class="row">
+        <p>Mulai Dengan Mencari (╯°□°）╯︵ ┻━┻</p>
+        <p class="blockquote-footer">Cuma Punya Fitur Search (●'◡'●)</p>
+      </div>
+    </main>
+
+    <!-- Modals -->
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content" id="movie-modal-details"></div>
+      </div>
+    </div>
+
+    <!-- Bootsrap---JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- MyScript -->
+    <script src="src/script.js"></script>
+  </body>
+</html>

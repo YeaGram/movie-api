@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.brand {
+  font-family: "Josefin sans";
+}
+.movieProperty span {
+  display: block;
+  font-weight: 500;
+  color: black;
+}
+.myShadow {
+  transition: 300ms;
+  transition-timing-function: cubic-bezier(0, 1.46, 0.45, 1.1);
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
+}
+.myShadow:hover {
+  transform: translateY(-10px);
+  filter: drop-shadow(0px 15px 10px rgba(0, 0, 0, 0.2));
+}
+.scaleUp {
+  transition: 300ms;
+  transition-timing-function: cubic-bezier(0, 1.46, 0.45, 1.1);
+}
+.scaleUp:hover {
+  transform: scale(110%);
+  border-radius: 5px;
+  filter: drop-shadow(0px 35px 15px rgba(0, 0, 0, 0.4));
+}
+.notfound {
+  font-weight: 300;
+}
+.wrapHead {
+  background-color: rgba(0, 0, 0, 0.8);
+}
